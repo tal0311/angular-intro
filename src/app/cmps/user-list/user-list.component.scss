@@ -1,0 +1,15 @@
+.user-list-container {
+  .user-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .actions-container {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    background-color: #333;
+  }
+}

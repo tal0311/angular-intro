@@ -1,0 +1,29 @@
+@import "./../../styles.scss";
+
+.ch1 {
+  font-family: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  &.dark {
+    background-color: #333;
+    color: #fff;
+  }
+
+  .season-img {
+    height: 200px;
+    background-image: url("./../../assets/images/seasons.png");
+    background-repeat: no-repeat;
+    width: 125px;
+    background-position: -250px;
+  }
+
+  .time {
+    color: rgb(31, 207, 238);
+    font-size: 2rem;
+    .amPm {
+      margin-inline-start: 1rem;
+    }
+  }
+}

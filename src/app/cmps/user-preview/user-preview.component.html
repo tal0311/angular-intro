@@ -1,0 +1,9 @@
+<section
+  *ngIf="user"
+  class="user-preview"
+  [style]="{ backgroundColor: user.color }"
+>
+  <h4>{{ user.username }}</h4>
+  <button (click)="userActions(user.id, 'REMOVE')">Delete</button>
+  <button (click)="userActions(user.id, 'SET_CURR')">Details</button>
+</section>

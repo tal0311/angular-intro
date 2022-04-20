@@ -1,0 +1,22 @@
+<section class="user-list-container">
+  <h1>ch3</h1>
+  <ul class="user-list">
+    <li *ngFor="let user of users">
+      <app-user-preview
+        (remove)="removeUser($event)"
+        (setUser)="setCurrUser($event)"
+        [user]="user"
+      ></app-user-preview>
+    </li>
+  </ul>
+
+  <app-user-details
+    (closeModal)="setCurrUser(null)"
+    *ngIf="currUser"
+    [user]="currUser"
+  ></app-user-details>
+
+  <div class="actions-container">
+    <button (click)="addUser()">Add user</button>
+  </div>
+</section>

@@ -1,0 +1,9 @@
+<section class="user-details" [style]="{ backgroundColor: user.color }">
+  <h4>{{ user.username }}</h4>
+  <section *ngIf="user.favorites">
+    <app-favorit-list [favorites]="user.favorites"
+   
+    ></app-favorit-list>
+    <button (click)="back()">Back</button>
+  </section>
+</section>

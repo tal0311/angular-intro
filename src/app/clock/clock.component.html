@@ -1,0 +1,12 @@
+<section [ngClass]="{ dark: isDarkMode}" class="ch1">
+  <h2>{{ title | uppercase }}</h2>
+  <div (click)="toggleDarkMode()" class="season-img"></div>
+  <div class="time">
+    <span>{{ FormattedTime.hours }}</span
+    >:
+    <span>{{
+      FormattedTime.min < 10 ? "0" + FormattedTime.min : FormattedTime.min
+    }}</span>
+    <span class="amPm">{{ FormattedTime.hours > 12 ? "PM" : "AM" }}</span>
+  </div>
+</section>
